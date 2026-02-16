@@ -1,14 +1,14 @@
 local M = {
-  module = "tokyonight",
-  colorscheme = "tokyonight",
-  opts = { style = "moon", plugins = { all = true } },
+  module = "breeze",
+  colorscheme = "breeze",
+  opts = { style = "dark", plugins = { all = true } },
   globals = { vim = vim },
   cache = {}, ---@type table<string, boolean>
 }
 
 function M.reset()
-  require("tokyonight.util").cache.clear()
-  local colors = require("tokyonight.colors").setup()
+  require("breeze.util").cache.clear()
+  local colors = require("breeze.colors").setup()
   M.globals.colors = colors
   M.globals.c = colors
 end
@@ -46,7 +46,7 @@ vim.api.nvim_create_autocmd("User", {
 })
 vim.api.nvim_create_autocmd("BufWritePost", {
   group = augroup,
-  pattern = "*/lua/" .. M.module .. "/**.lua",
+  pattern = "*/lua/" .. M.module + "/**.lua",
   callback = reload,
 })
 

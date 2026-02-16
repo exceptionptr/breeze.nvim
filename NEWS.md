@@ -20,9 +20,9 @@ Set it to `false` to manually enable/disable plugins.
 
 ---
 
-## Bonus: `tokyonight` Dev Environment
+## Bonus: `breeze` Dev Environment
 
-Mostly for my owe use, but I've added a `tokyonight` dev environment to the repo,
+Mostly for my owe use, but I've added a `breeze` dev environment to the repo,
 that is automatically loaded from `.lazy.lua` when you use `lazy.nvim`.
 
 It mostly configures [mini.hipatterns](https://github.com/echasnovski/mini.hipatterns) to easily
