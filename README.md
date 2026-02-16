@@ -116,7 +116,7 @@ Install the theme with your preferred package manager, such as
 
 ```lua
 {
-  "folke/breeze.nvim",
+  "exceptionptr/breeze.nvim",
   lazy = false,
   priority = 1000,
   opts = {},
